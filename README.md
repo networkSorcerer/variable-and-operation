@@ -84,23 +84,16 @@ public class VariableExchangeExample {
 }
 ```
 
-5) 데이터 종류
+### 데이터 종류
+논리형 (boolean)
+문자형 (char)
+정수형 (int, long 등)
+실수형 (float, double 등)
+참조형 (클래스, 인터페이스 등)
 
  
 
-논리 
-
-문자
-
-정수
-
-실수
-
-참조
-
- 
-
-6) 논리형 
+### 논리형 
 
 boolean 타입을 사용하며 1바이트 만큼의 메모리 공간을 차지한다  
 
@@ -127,7 +120,7 @@ public class BooleanExample {
 }
 ```
 
-7) 소스코드 입력
+### 소스코드 입력
 
 
 ```java
