@@ -85,11 +85,11 @@ public class VariableExchangeExample {
 ```
 
 ### 데이터 종류
-논리형 (boolean)
-문자형 (char)
-정수형 (int, long 등)
-실수형 (float, double 등)
-참조형 (클래스, 인터페이스 등)
+- ** 논리형 (boolean) **
+- ** 문자형 (char) **
+- ** 정수형 (int, long 등) **
+- ** 실수형 (float, double 등) **
+- ** 참조형 (클래스, 인터페이스 등) **
 
  
 
