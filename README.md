@@ -122,3 +122,8 @@
 6) 논리형 
 
 boolean 타입을 사용하며 1바이트 만큼의 메모리 공간을 차지한다  
+
+```python
+def hello():
+    print("Hello, world!")
+
