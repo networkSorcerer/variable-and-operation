@@ -122,7 +122,7 @@ public class VariableInitializationExample {
 		System.out.printf("value=%d\nresult=%d", value, result);
 	}
 }
-```java
+
 package exam_variable;
 
 public class VariableExchangeExample {
@@ -164,7 +164,7 @@ public class VariableExchangeExample {
 
 boolean 타입을 사용하며 1바이트 만큼의 메모리 공간을 차지한다  
 
-```java
+
 package exam_boolean;
 
 public class BooleanExample {
@@ -187,7 +187,7 @@ public class BooleanExample {
 
 7) 소스코드 입력
 
-```java
+
 package exam_input;
 
 import java.util.Scanner;
