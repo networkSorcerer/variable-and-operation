@@ -103,6 +103,47 @@
 
 다르게 표현하면 "대입한다" 라고 하며 만일 변수를 선언한후 처음 값을 저장한다면 "초기화한다"라고 표현한다
 
+```java
+package exam_variable;
+
+public class VariableInitializationExample {
+	public static void main(String [] args) {
+		//변수 선언과ㅑ 동시에 초기 값 설정. 10을 변수 value의 초기값으로 저장
+		int value = 10;
+		
+		//변수 value값을 읽고 10을 더하는 산술 연산을 수행
+		//연산의 결과값을 변수 result의 초기값으로 저장
+		int result = value + 10;
+		
+		//변수 result 값을 읽고 콘솔에 촐력
+		System.out.println("value=" + value + "result=" + result);
+		//printf (format) 변수의 값을 출력하기 위해 변환 문자 (%)로 명시. 정수 : %d 문자 : %c 
+		//문자열 : %s 실수 : %f
+		System.out.printf("value=%d\nresult=%d", value, result);
+	}
+}
+```java
+package exam_variable;
+
+public class VariableExchangeExample {
+	public static void main(String [] args) {
+		int number1, number2, temp;
+		
+		number1 = 3;
+		number2 = 5;
+		
+		System.out.println("교환전 number1와 number2의 값");
+		System.out.println("number1 = " + number1 + "number2 =" + number2 );
+		
+		temp = number1;
+		number1 = number2;
+		number2 = temp;
+		
+		System.out.println("교환후 number1와 number2의 값");
+		System.out.printf("number1 = %d number2 = %d", number1, number2);
+	}
+}
+
 5) 데이터 종류
 
  
@@ -124,23 +165,52 @@
 boolean 타입을 사용하며 1바이트 만큼의 메모리 공간을 차지한다  
 
 ```java
-package exam_variable;
+package exam_boolean;
 
-public class VariableInitializationExample {
+public class BooleanExample {
 	public static void main(String [] args) {
-		//변수 선언과ㅑ 동시에 초기 값 설정. 10을 변수 value의 초기값으로 저장
-		int value = 10;
+		//상태값에 따라 조건문과 제어문의 실행 흐름을 변경하는데 사용 
+		boolean stop = true;
+		if(stop) {
+			System.out.println("중지합니다");
+		}else {
+			System.out.println("시작합니다");
+		}
 		
-		//변수 value값을 읽고 10을 더하는 산술 연산을 수행
-		//연산의 결과값을 변수 result의 초기값으로 저장
-		int result = value + 10;
-		
-		//변수 result 값을 읽고 콘솔에 촐력
-		System.out.println("value=" + value + "result=" + result);
-		//printf (format) 변수의 값을 출력하기 위해 변환 문자 (%)로 명시. 정수 : %d 문자 : %c 
-		//문자열 : %s 실수 : %f
-		System.out.printf("value=%d\nresult=%d", value, result);
+		int x = 10;
+		boolean result1 = (x == 20);
+		boolean result2 = (x != 20);
+		System.out.println("result : " + result1);
+		System.out.println("result : " + result2);
 	}
-	
+}
+
+7) 소스코드 입력
+
+```java
+package exam_input;
+
+import java.util.Scanner;
+
+public class TwoNumberSum {
+	//메인 메소드에서 부터 실행이 시작된다
+	public static void main(String args[] ) {
+		Scanner input = new Scanner(System.in);
+		int x;
+		int y;
+		int sum;
+		
+		System.out.print("첫번째 숫자를 입력하시오");
+		x= input.nextInt();
+		
+		System.out.print("두번째 숫자 입력");
+		y = input.nextInt();
+		
+		sum = x + y;
+		
+		System.out.println("두 수의 합 : " + sum);
+		
+		input.close();
+	}
 }
 
