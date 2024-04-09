@@ -61,6 +61,7 @@ public class VariableInitializationExample {
 }
 ```
 
+```java
 package exam_variable;
 
 public class VariableExchangeExample {
@@ -81,6 +82,7 @@ public class VariableExchangeExample {
 		System.out.printf("number1 = %d number2 = %d", number1, number2);
 	}
 }
+```
 
 5) 데이터 종류
 
@@ -103,6 +105,7 @@ public class VariableExchangeExample {
 boolean 타입을 사용하며 1바이트 만큼의 메모리 공간을 차지한다  
 
 
+```java
 package exam_boolean;
 
 public class BooleanExample {
@@ -122,10 +125,12 @@ public class BooleanExample {
 		System.out.println("result : " + result2);
 	}
 }
+```
 
 7) 소스코드 입력
 
 
+```java
 package exam_input;
 
 import java.util.Scanner;
@@ -151,4 +156,4 @@ public class TwoNumberSum {
 		input.close();
 	}
 }
-
+```
