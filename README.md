@@ -59,6 +59,7 @@ public class VariableInitializationExample {
 		System.out.printf("value=%d\nresult=%d", value, result);
 	}
 }
+```
 
 package exam_variable;
 
